@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left-side {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+  }
+  
+  .right-side {
+    float: right;
+    width: 50%;
+    padding: 20px;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+  }
+  
+  .form-container {
+    padding: 20px;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: rgb(76, 3, 78); /* Purple color */
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: green; /* Green hover effect */
+  }
+  
+  /* Styling for index.html */
+  #left-section, #right-section {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  #left-section {
+    width: 50%;
+    padding: 20px;
+  }
+  
+  #right-section {
+    width: 50%;
+    padding: 20px;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+  }
+  
+  .login-form-container {
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  /* Header styling */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:rgb(76, 3, 78) ;
+    color: white;
+  }
+  
+  header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  .dashboard-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .form-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .form-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(76, 3, 78);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .form-container button:hover {
+    background-color: green; /* Green hover effect */
+  }
+  
+  .table-container {
+    width: 55%;
+  }
+  
+  .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-container th, .table-container td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table-container th {
+    background-color: rgb(76, 3, 78);
+    color: white;
+  }
+  
+  .message {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .message.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+  }
+  
+  .message.error {
+    background-color: #f2dede;
+    color: #a94442;
+  }
+  
+  .account-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    text-align: left;
+  }
+  
+  .account-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .account-container p {
+    margin: 10px 0;
+    line-height: 1.5;
+  }
+  .account-details {
+    margin: 20px 0;
+  }
+  
+  .account-details p {
+    margin: 10px 0;
+    font-size: 18px;  /* Increase the font size */
+  }
+  
+  /* Styling for the labels to be vertical */
+  .account-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;  /* Ensure labels appear above the values */
+  }
+  
+  .account-value {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e9e9e9;
+    font-size: 16px;
+  }
+  
+  #logoutButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #logoutButton:hover {
+    background-color: green; /* Green hover effect */
+  }
+  

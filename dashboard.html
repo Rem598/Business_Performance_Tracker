@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Business Performance Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Business Performance Dashboard</h1>
+        <nav>
+            <a href="account.html">Account</a>
+            <a href="/logout">Logout</a>
+        </nav>
+    </header>
+    
+    <div class="dashboard-container">
+        <div class="form-container">
+            <h2>Track Your Business Performance</h2>
+            <form id="performance-form">
+                <label for="business-name">Business Name:</label>
+                <input type="text" id="business-name" name="business_name" required>
+                
+                <label for="income">Income:</label>
+                <input type="number" id="income" name="income" required>
+                
+                <label for="expenses">Expenses:</label>
+                <input type="number" id="expenses" name="expenses" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="table-container">
+            <h2>Performance Summary</h2>
+            <table id="performance-table">
+                <thead>
+                    <tr>
+                        <th>Business Name</th>
+                        <th>Total Income</th>
+                        <th>Total Expenses</th>
+                        <th>Total Profit</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

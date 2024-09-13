@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Performance Tracker - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="left-section">
+            <h1>Welcome to the Business Performance Tracker</h1>
+            <p>Here you can track and manage your business performance data, analyze trends, and make informed decisions to drive your business forward.</p>
+        </div>
+        <div id="right-section">
+            <div class="login-form-container">
+                <div id="authmsg" style="display: none; color: green;"></div>
+
+                <h2>Login</h2>
+                <div class="message" style="display: none;"></div> <!-- Success/Failure message area -->
+                <form id="login-form">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <p>Don't have an account? <a href="register.html">Register here</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+    
+</body>
+</html>
