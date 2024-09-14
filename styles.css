@@ -201,6 +201,7 @@ body {
   .account-container p {
     margin: 10px 0;
     line-height: 1.5;
+    text-align: center;
   }
   .account-details {
     margin: 20px 0;
@@ -215,6 +216,7 @@ body {
   .account-label {
     font-weight: bold;
     margin-bottom: 5px;
+    text-align: left;
     display: block;  /* Ensure labels appear above the values */
   }
   
@@ -227,17 +229,7 @@ body {
     font-size: 16px;
   }
   
-  #logoutButton {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+ 
   
-  #logoutButton:hover {
-    background-color: green; /* Green hover effect */
-  }
+  
   

@@ -99,39 +99,7 @@ app.get('/dashboard', (req, res) => {
   }
 });
 
-app.get('/account', (req, res) => {
-  if (!req.session.user) {
 
-    res.redirect('/');
-  } else {
-    res.sendFile(__dirname + '/account.html'); 
-  }
-});
-
-// Route to fetch user details (Assuming user is logged in and userId is stored in session)
-app.get('/account-details', (req, res) => {
-    const userId = req.session.userId; // Fetch the userId from session
-
-    if (!userId) {
-        return res.status(401).json({ message: 'Unauthorized: User not logged in' });
-    }
-
-    const query = 'SELECT username, email FROM users WHERE id = ?';
-    db.query(query, [userId], (err, results) => {
-        if (err) {
-            return res.status(500).json({ message: 'Error fetching user details' });
-        }
-
-        if (results.length > 0) {
-            res.json({
-                username: results[0].username,
-                email: results[0].email
-            });
-        } else {
-            res.status(404).json({ message: 'User not found' });
-        }
-    });
-});
 
 
 app.post('/register', (req, res) => {
