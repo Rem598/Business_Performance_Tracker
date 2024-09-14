@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (registerForm) {
         registerForm.addEventListener('submit', function(e) {
-            e.preventDefault(); // Prevent default form submission behavior
+            e.preventDefault(); // Prevent default form submission 
 
             const username = document.getElementById('username').value;
             const email = document.getElementById('email').value;
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error('Register form not found');
     }
 
-    // Function to dynamically show messages (e.g., success messages)
+    // Function to show messages (e.g., success messages)
     function authmsg(message) {
         const messageDiv = document.getElementById('authmsg');
         messageDiv.innerText = message;

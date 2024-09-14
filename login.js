@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (loginForm) {
         loginForm.addEventListener('submit', function(e) {
-            e.preventDefault(); // Prevent default form submission behavior
+            e.preventDefault(); // Prevent default form submission 
 
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
@@ -15,13 +15,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 body: JSON.stringify({ email: email, password: password })
             })
-            .then(response => response.json()) // Expecting JSON response
+            .then(response => response.json()) 
             .then(data => {
                 if (data.success) {
                     authmsg(data.message); // Display success message
                     setTimeout(() => {
                         window.location.href = '/dashboard'; // Redirect to dashboard after showing message
-                    }, 3000); // Delay redirection to allow message display
+                    }, 3000); 
                 } else {
                     authmsg(data.message); // Display error message
                 }

@@ -1,5 +1,5 @@
 // Assume user is logged in and we have their userId stored
-const userId = 1; // This should be dynamically set after login
+const userId = 1; 
 
 // Fetch previous performance data when the page loads
 document.addEventListener('DOMContentLoaded', function() {
@@ -71,11 +71,11 @@ document.getElementById('logoutButton').addEventListener('click', () => {
       .catch((error) => console.error('Logout Error:', error));
 });
 
-// Function to dynamically show messages (e.g., success messages)
+// Function to show messages 
 function authmsg(message) {
     const messageDiv = document.getElementById('authmsg');
     messageDiv.innerText = message;
-    messageDiv.style.display = 'block'; // Show the message
+    messageDiv.style.display = 'block'; 
     setTimeout(() => {
       messageDiv.style.display = 'none'; // Hide the message after 3 seconds
     }, 3000);
@@ -96,7 +96,7 @@ function displayMessage() {
 }
 window.onload = displayMessage;
 
-// Option to dynamically fetch correct user ID after login (ensure login system returns this)
+// fetch correct user ID after login (ensure login system returns this)
 function setUserId(newUserId) {
     userId = newUserId;
 }

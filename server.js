@@ -24,7 +24,7 @@ app.use(session({
 }));
 
 
-// MySQL connection without selecting a specific database initially
+// MySQL connection
 const db = mysql.createConnection({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
@@ -100,8 +100,6 @@ app.get('/dashboard', (req, res) => {
 });
 
 
-
-
 app.post('/register', (req, res) => {
     const { username, email, password } = req.body;
     const saltRounds = 10;
@@ -124,9 +122,6 @@ app.post('/register', (req, res) => {
   });
   
   
-
-
-
 app.post('/login', (req, res) => {
     const { email, password } = req.body;
     const query = 'SELECT * FROM users WHERE email = ?';
